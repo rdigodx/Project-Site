@@ -4,13 +4,16 @@
     box-sizing: border-box;
 }
 body {
+    height: 100%;
     background-image: url("../images/vecteezy_elegant-gold-thin-wave-line-with-golden-sparkle-in-black_25414791.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     overflow-y: scroll;
     font-family: Arial, sans-serif;
     color: white;
 }
+
 h3 {
     color: #fff;
     font-size: 38px;
@@ -19,6 +22,7 @@ h3 {
 h3 span {
     color: goldenrod;
 }
+
 .header {
     font-family: "Great Vibes", serif;
     background-color: rgba(8, 8, 8, 0.7);
@@ -29,8 +33,9 @@ h3 span {
     font-size: 1.8rem;
     background-color: rgba(8, 8, 8, 0.7);
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
 
-h1 {
+.header h1 {
     font-family: "Great Vibes", serif;
     font-weight: 400;
     font-size: 4rem;
@@ -84,7 +89,6 @@ h1 {
  #menu-h ul li a:hover {
      background-color: goldenrod;
  }
-}
 /* Parágrafos */
 .main {
    padding: 2rem; 
@@ -106,4 +110,42 @@ footer {
     text-align: center;
     padding: 15px 0;
     margin-top: 40px;
+  }
+  @media (max-width: 768px) {
+    .image-container {
+        width: 100%;
+        height: auto;
+        position: relative;
+        right: 0;
+        top: 0;
+        margin: 20px 0;
+        border: none;
+        box-shadow: none;
+    }
+    .instagram-icon {
+        right: 20px;
+        top: 35px;
+        font-size: 27px;
+        width: 40px;
+        height: 40px;
+        padding: 4px;
+    }
+    .header {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 4rem;
+    }
+    #menu-h {
+        font-size: 1.5rem;
+        padding: 10px 0;
+    }
+
+    #menu-h ul li {
+        display: flex;
+        flex-direction: row;
+        margin: 0 10px;
+    }
   }

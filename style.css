@@ -3,21 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Corpo da página com fundo preto */
 body {
+    height: 100%;
     background-image: url("images/vecteezy_elegant-gold-thin-wave-line-with-golden-sparkle-in-black_25414791.jpg");
     background-size: cover; 
     background-position: center;
+    background-attachment: fixed;
     overflow-y: scroll; 
     font-family: Arial, sans-serif;
     color: white;
+}
+
+h2 {
+    color: #fff;
+    font-size: 25px;
+}
+
+h2 span {
+    color: goldenrod;
 }
 
 h3 {
     color: #fff;
     font-size: 38px;
     text-align: center;
+    position: relative; /* Adicionado para posicionamento relativo */
+    z-index: 1; /* Adicionado para garantir que o h3 fique atrás da imagem */
 }
 
 h3 span {
@@ -99,15 +110,6 @@ h3 span {
     flex-direction: column; 
     gap: 11rem; 
 }
-
-.main p {
-    font-size: 2rem; 
-    max-width: 800px; 
-    color: #ddd; 
-    padding: 20px; 
-    font-family: "Great Vibes", serif; 
-}
-
 section.servicos {
     padding: 40px;  
 }
@@ -135,6 +137,7 @@ section.servicos {
     font-size: 28px;
     margin: 15px 0;
 }
+
 .image-container {
     position: absolute;
     right: 20px; 
@@ -144,6 +147,7 @@ section.servicos {
     border: 9px solid goldenrod; 
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
+    z-index: 2; /* Adicionado para garantir que a imagem fique na frente do h3 */
 }
 
 button {
@@ -170,3 +174,78 @@ footer {
     padding: 20px 0;
     margin-top: 40px;
 }
+@media (max-width: 768px) {
+    .image-container {
+        width: 100%;
+        height: auto;
+        position: relative;
+        right: 0;
+        top: 0;
+        margin: 20px 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    .header {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 4rem;
+    }
+
+    .instagram-icon {
+        right: 20px;
+        top: 35px;
+        font-size: 27px;
+        width: 40px;
+        height: 40px;
+        padding: 4px;
+    }
+
+    #menu-h {
+        font-size: 1.5rem;
+        padding: 10px 0;
+    }
+
+    #menu-h ul li {
+        display: flex;
+        flex-direction: row;
+        margin: 0 10px;
+    }
+
+    .main {
+        padding: 10px;
+        gap: 5rem;
+    }
+
+    section.servicos {
+        padding: 20px;
+    }
+
+    .servicos .servicos-box ul {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .servicos .servicos-box h4 {
+        font-size: 24px;
+    }
+
+    button {
+        margin: 20px auto;
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 10px 0;
+        margin-top: 20px;
+    }
+}
+

@@ -101,15 +101,12 @@ h3 span {
 section.servicos {
     padding: 40px;  
 }
-section.servicos.flex {
-    gap: 60px;      
-}
 .servicos .servicos-box ul {
     list-style: none;
-    padding: 0;  
+    padding: 40px;  
     margin: 0;
-    color: #fff;
-    padding: 40px;                        
+    gap: 10px;
+    color: #fff;                       
     border-radius: 20px; 
     margin-top: 45px;
     transition: .2s;

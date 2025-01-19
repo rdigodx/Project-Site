@@ -15,6 +15,8 @@
         <a href="https://www.instagram.com/garotaveraofashion/" class="instagram-icon" target="_blank">
             <i class="fa-brands fa-instagram"></i>
           </a>
+          <div class="menutoggle" onclick="toggleMenu()">☰</div>
+ </div>
     <nav id="menu-h">
         <ul>
             <li><a href="indeex.html"> Home</a></li>
@@ -22,13 +24,26 @@
             <li><a href="/pages/servicos.html">Serviços</a></li>
             <li><a href="https://api.whatsapp.com/send/?phone=5562993963356&text&type=phone_number&app_absent=0">Contato</a></li>
         </ul>
-    </nav>
-</div>
+    </nav> 
 
-<div class="image-container">
-    <img src="https://www.tupi.fm/wp-content/uploads/Bronzeamento-espetacular.jpg" alt="Imagem de bronzeamento"   width="100%">
+    <div id="mmobile">
+        <div class="close-menu" onclick="toggleMenu()">×</div> 
+        <ul>
+            <li><a href="indeex.html"> Home</a></li>
+            <li><a href="/pages/sobre.html">Sobre</a></li>
+            <li><a href="/pages/servicos.html">Serviços</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=5562993963356&text&type=phone_number&app_absent=0">Contato</a></li>
+        </ul>
+        </div>
+    </div>
+</div>  
+  <div class="slider">
+    <img class="selected" src="images/imagem1.jpg" alt="Image1">
+    <img src="images/imagem2.jpg" alt="Image2">
+    <img src="images/imagem3.jpg" alt="Image3">
+    <img src="images/imagem4.jpg" alt="Image4">
+  </div>
 </div>
-
     <div class="main">
     <h3>Seja bem-vinda ao <span>Garota Verão Fashion!</span></h3>
      <h2>
@@ -43,19 +58,19 @@
                      <div class="servicos-box">
                           <h4>Bronze no Sol:</h4>
                           <ul>
-                             <li>- 2 Toalhas de Banho</li>
-                             <li>- 1 Chinelo</li>
-                             <li>- 1 Garrafinha de água</li>
-                             <li>- 1 Protetor solar</li>
+                             <li>🌞 2 Toalhas de Banho</li>
+                             <li>🌞 1 Chinelo</li>
+                             <li>🌞 1 Garrafinha de água</li>
+                             <li>🌞 1 Protetor solar</li>
                             </ul>   
                         </div>
                             <div class="servicos-box">
                                <h4>Bronze na Cabine:</h4>
                                <ul>
-                                 <li>- 1 Toalha de banho</li>
-                                 <li>- 1 Chinelo</li>
-                                 <li>- 1 Coca cola lata</li>
-                                 <li>- 1 Protetor solar</li>
+                                 <li>👙 1 Toalha de banho</li>
+                                 <li>👙 1 Chinelo</li>
+                                 <li>👙 1 Coca cola lata</li>
+                                 <li>👙 1 Protetor solar</li>
                                 </ul>
                              </div>
                 </div>   
@@ -63,16 +78,14 @@
     </div>
     <h3>Venha viver essa experiência e <span>conquiste sua Beleza!</span></h3>
     </div>
+    <div class="video">
+      <video src="video/video1.mp4" width="500" controls loop></video>
+    </div>
 
     <div class="button">
         <button onclick="location.href='https://api.whatsapp.com/send/?phone=5562993963356&text&type=phone_number&app_absent=0'">Agendamento</button>
     </div>
-
-    <div class="image-container">
-        <img src="https://www.tupi.fm/wp-content/uploads/Bronzeamento-espetacular.jpg" alt="Imagem de bronzeamento"   width="100%">
-    </div>
-
-    <footer>
+<footer>
         <div class="container">
           <p>&copy; 2025 Garota Verão Fashion. Todos os direitos reservados.
             R. 24 de Outubro, S/N - Qd 05 Lt 07 
@@ -80,5 +93,6 @@
           </p>
         </div>
       </footer>
+      <script src="script.js"></script>
 </body>
 </html>

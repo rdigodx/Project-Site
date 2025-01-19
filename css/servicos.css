@@ -87,6 +87,62 @@ h3 span {
  #menu-h ul li a:hover {
      background-color: goldenrod;
  }
+ .menutoggle {
+    position: fixed;
+    left: 20px; 
+    top: 30px; 
+    font-size: 36px; 
+    color: white;
+    cursor: pointer;
+    z-index: 999; 
+    display: none; 
+}
+.close-menu {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.close-menu:hover {
+    color: goldenrod;
+}
+
+#mmobile {
+    display: none;
+    background-color: rgb(8, 8, 8);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 60%;
+}
+#mmobile ul {
+    padding: 0;
+    margin: 0;
+}
+
+#mmobile ul li {
+    padding: 20px;
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+#mmobile ul li a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 1.8rem;
+}
+
+#mmobile ul li a:hover {
+    background-color: goldenrod;
+}
+
 .main {
     padding: 20px;
     display: flex;
@@ -133,14 +189,13 @@ footer {
     margin-top: 40px;
 }
 @media (max-width: 768px) {
-    .instagram-icon {
-        right: 20px;
-        top: 35px;
-        font-size: 27px;
-        width: 40px;
-        height: 40px;
-        padding: 4px;
+    .menutoggle  {
+        display: block;
     }
+    h3 {
+        font-size: 32px;
+    }
+
     .header {
         font-size: 1.5rem;
         padding: 10px;
@@ -149,14 +204,57 @@ footer {
     .header h1 {
         font-size: 4rem;
     }
+
+    .instagram-icon {
+        right: 20px;
+        top: 35px;
+        font-size: 27px;
+        width: 40px;
+        height: 40px;
+        padding: 4px;
+    }
     #menu-h {
-        font-size: 1.5rem;
-        padding: 10px 0;
+        display: none;
+    }
+    #mmobile ul li {
+        padding: 20px;
+        text-align: left;
+        font-size: 2rem; 
     }
 
-    #menu-h ul li {
-        display: flex;
-        flex-direction: row;
-        margin: 0 10px;
+    #mmobile ul li a {
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        font-size: 2rem;
+    }
+    .main {
+        padding: 10px;
+        gap: 5rem;
+    }
+
+    section.servicos {
+        padding: 20px;
+    }
+
+    .servicos .servicos-box ul {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .servicos .servicos-box h4 {
+        font-size: 24px;
+    }
+
+    button {
+        margin: 20px auto;
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 10px 0;
+        margin-top: 20px;
     }
 }
+
